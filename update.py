@@ -17,7 +17,7 @@ bot = commands.Bot(command_prefix="!", intents=discord.Intents.all())
 async def on_ready():
     print('bot ready')
     for guild in bot.guilds:
-        if str(guild) == 'COVID-19 Bunker':
+        if str(guild) == '--SERVER NAME--':
             for member in guild.members:
                 member_ids.append(member.discriminator)
                 member_names.append(member.name)
@@ -33,4 +33,4 @@ async def on_ready():
     conn.close()
     print("end")
 
-bot.run("MTAzNzI2Mzg2MDUwMTA2OTg0NA.GKJ7Nv.TNRRZcCj3adSA9ii3YusWNQi1kE_Tdomx-NBxg")
+bot.run("--BOT TOKEN--")
