@@ -1,0 +1,19 @@
+{%extends "layout.html"%}
+{%block title%}Check MMRs{%endblock%}
+
+{%block main%}
+<p>Input user ID and what you want to set MMR to.</p>
+<div class="container">  
+    <form action="/update" method="post">
+        <div class="mb-3">
+        <label for="id" class="form-label">ID</label>
+        <input type="text" autocomplete="off" class="form-control" id="id" name="id" aria-describedby="id">
+        </div>
+        <div class="mb-3">
+        <label for="Value" class="form-label">Value</label>
+        <input type="text" class="form-control" name="value" id="value">
+        </div>
+        <button type="submit" class="btn btn-primary">Set</button>
+    </form>
+</div>
+{%endblock%}

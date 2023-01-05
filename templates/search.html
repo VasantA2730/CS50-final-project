@@ -1,0 +1,14 @@
+{%extends "layout.html"%}
+{%block title%}Check MMRs{%endblock%}
+
+{%block main%}
+<p>Input user ID and press search to search MMR. In order to search multiple MMRs at once, type in ids as a comma seperated list</p>
+<div class="container">
+    <form action="/search" method="post">
+        <div class="input-group news-input">
+            <input type="text" autocomplete="off" class="form-control" name = "id" placeholder="User ID" aria-label="ID" aria-describedby="button-addon2">
+            <button class="btn btn-dark btn-lg" type="submit" >Search</button>
+        </div>
+    </form>
+</div>
+{%endblock%}

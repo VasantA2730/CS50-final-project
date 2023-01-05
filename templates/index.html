@@ -1,0 +1,32 @@
+{%extends "layout.html" %}
+
+{% block title %}
+    Input Players
+{%endblock%}
+
+{% block main%}
+<p>Type in the ids of players</p> 
+<form action="/" method="post">
+    <div class="container mb-3">
+        <input type="text" class="mr-3" autocomplete="off"  id="top1" name="top1" placeholder="Top" aria-describedby="id">
+        <input type="text" class="ml-3" autocomplete="off"  id="top2" name="top2" placeholder="Top" aria-describedby="id">
+    </div>
+    <div class="container mb-3">
+        <input type="text" class="mr-3" autocomplete="off"  id="top1" name="jg1" placeholder="JG" aria-describedby="id">
+        <input type="text" class="ml-3" autocomplete="off"  id="top2" name="jg2" placeholder="JG" aria-describedby="id">
+    </div>
+    <div class="container mb-3">
+        <input type="text" class="mr-3" autocomplete="off"  id="top1" name="mid1" placeholder="Mid" aria-describedby="id">
+        <input type="text" class="ml-3" autocomplete="off"  id="top2" name="mid2" placeholder="Mid" aria-describedby="id">
+    </div>
+    <div class="container mb-3">
+        <input type="text" class="mr-3" autocomplete="off"  id="top1" name="bot1" placeholder="Bot" aria-describedby="id">
+        <input type="text" class="ml-3" autocomplete="off"  id="top2" name="bot2" placeholder="Bot" aria-describedby="id">
+    </div>
+    <div class="container mb-3">
+        <input type="text" class="mr-3" autocomplete="off"  id="top1" name="sup1" placeholder="Sup" aria-describedby="id">
+        <input type="text" class="ml-3" autocomplete="off"  id="top2" name="sup2" placeholder="Sup" aria-describedby="id">
+    </div>
+    <button class="btn btn-dark btn-lg" type="submit">Make teams!</button>
+</form>
+{%endblock%}
